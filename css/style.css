@@ -95,7 +95,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.content_projekt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 45px ;
+  
 }
 
 .content_projekt_items {
@@ -112,6 +118,7 @@ body {
 .projekt_items_tex {
   padding-left: 20px;
 }
+
 .projekt_items_tex h3 {
   font-weight: 500;
   font-size: 21px;
@@ -180,7 +187,7 @@ footer {
 }
 
 .footern__content {
-  padding-left: 20.9%;
+  padding-left: 20.4%;
 }
 
 .footern__content h3 {
@@ -196,4 +203,53 @@ footer {
   line-height: 21.33px;
   color: #FFFFFF;
   padding-top: 15px;
+}
+
+@media( max-width:1150px) {
+  .heder__content {
+      padding-left: 135px;
+  }
+  .footern__content {
+      padding-left: 20px;
+  }
+}
+
+@media( max-width:800px) {
+  .main__content_about {
+      justify-content: flex-start;
+      padding-left: 135px;
+  }
+  .main__content_projekt {
+      justify-content: flex-start;
+      padding-left: 10px;
+  }
+  body {
+      min-width: 600px;
+  }
+}
+
+@media( max-width:600px) {
+  .heder__content {
+      padding-left: 50px;
+  }
+  .main__content_about {
+      justify-content: flex-start;
+      padding-left: 30px;
+  }
+  .main__content_projekt {
+      justify-content: flex-start;
+      padding-left: 10px;
+  }
+  .main__content_projekt {
+      flex-wrap: wrap;
+      padding-left: 40px;
+      padding-right: 30px;
+  }
+  .content_nav__link a {
+      font-size: 13px;
+  
+  }
+  .content_nav__link{
+      margin-left: -20px;
+  }
 }
