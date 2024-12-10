@@ -321,7 +321,11 @@ footer {
   body {
       min-width: 220px;
   }
-
+  .content_about p {
+      font-size: 12px;
+      width: auto;
+      padding-inline: 10%;
+  }
   .conteiner__video_work {
       padding-inline: 5%; 
       max-width: calc(70% - 10%);
