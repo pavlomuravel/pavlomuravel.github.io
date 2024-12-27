@@ -219,7 +219,18 @@ footer {
   color: #FFFFFF;
   padding-top: 15px;
 }
-
+ .home-work {
+  padding-top: 100px;
+  font-size: 25px;
+ }
+ .heder__content_title a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+ }
+ .heder__content_title a:hover {
+  color: #ec0606;
+ }
 @media( max-width:1167px) {
   body {
       min-width: 800px;
