@@ -231,6 +231,24 @@ footer {
  .heder__content_title a:hover {
   color: #ec0606;
  }
+
+ .home-work {
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+ 
+ }
+
+ .home-work_img {
+  width: 100%;
+  height: 100%;
+ }
+
+ .home-work_conteiner {
+  width: 300px;
+  height: 300px;
+  box-shadow: 10px 10px 5px gray;
+ }
 @media( max-width:1167px) {
   body {
       min-width: 800px;
