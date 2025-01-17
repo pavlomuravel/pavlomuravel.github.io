@@ -1,0 +1,115 @@
+@use"fonts" as *;
+@use"variables" as *;
+@use"mixin" as *;
+
+.main__team-page {
+    padding-inline: 280px;
+    padding-block: 60px;
+
+    .team-page__conteiner {
+        display: flex;
+        gap: 60px;
+        
+        .team-page__conteiner-foto {
+            width: 100%;
+            height: auto;
+            min-width: 300px;
+            max-height: 500px;
+            background-image: url(../../assets/images/Team-5.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            aspect-ratio: 3/4;
+        }
+
+        .team-page__conteiner-informacion {
+
+            .conteiner-informacion__title {
+
+                h1 {
+                    @include title_abaut;
+                }
+
+            }
+
+            .conteiner-informacion__contakt {
+                padding-top: 16px;
+                padding-bottom: 31px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .contakt__position {
+                    font-size: 14px;
+                    font-family: Montserrat;
+                    color: $text;
+                }
+
+                .contakt__email a {
+                    line-height: 19.5px;
+                    font-size: 16px;
+                    font-family: Montserrat;
+                    text-decoration: none;
+                    color: $regular;
+                }
+
+                .contakt__profil a {
+                    line-height: 19.5px;
+                    font-size: 16px;
+                    font-family: Montserrat;
+                    text-decoration: none;
+                    color: $regular;
+                }
+            }
+
+            .team-page__line {
+                width: 100%;
+                height: 4px;
+                background-color: $separator;
+            }
+
+            .team-page__circle {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $separator;
+            }
+
+            .conteiner-informacion__biografi{
+                margin-top: 10px;
+
+                p {
+                    font-family: "Montserrat";
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: black;
+                    margin-top: 20px;                
+                }
+
+                .conteiner-informacion__education {
+                    h3 {
+                        font-family: "Montserrat";
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17.7px;
+                        letter-spacing: 1px;
+                        color: $main;
+                        margin-top: 30px;
+                    }
+                }
+
+                .conteiner-informacion__experience{
+                    h3 {
+                        font-family: "Montserrat";
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17.7px;
+                        letter-spacing: 1px;
+                        color: $main;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }       
+    }
+}

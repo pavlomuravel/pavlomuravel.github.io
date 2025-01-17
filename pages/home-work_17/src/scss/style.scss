@@ -1,0 +1,23 @@
+@use"reset";
+@use"fonts" as *;
+@use"variables" as *;
+@use"mixin" as *;
+@use"header";
+@use"header-dark";
+@use"main-abaut";
+@use"main-team";
+@use"team-page";
+@use"publications";
+@use"publication-page";
+@use"services";
+@use"services-page";
+@use"home";
+@use"footer";
+@use"media";
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+

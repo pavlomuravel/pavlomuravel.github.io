@@ -1,0 +1,330 @@
+@use"fonts" as *;
+@use"variables" as *;
+@use"mixin" as *;
+
+.publications__page {
+    overflow: hidden;
+
+    .publications__page-conteiner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-inline: 280px;
+        padding-block: 60px;
+
+        .publications__page-conteiner-img {
+            background-image: url(../../assets/images/Publication-2.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            width: 100%;
+            height: 500px;
+        }
+
+        .publications__page-conteiner-title {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36.57px;
+            color: $main;
+
+            .publications__page-conteiner-data {
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14.63px;
+                color: $text;
+                letter-spacing: 1px;
+                padding-top: 15px
+            }
+        }
+
+        .publications__page-conteiner-informacion {
+            border-top: 4px solid $separator;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .informacion__text {
+                @include text_publications;
+
+                p {
+                    margin-top: 20px
+                }           
+            }
+
+            .informacion__title {
+                @include title_abaut;
+            }
+
+            .informacion__list {
+
+                h3 {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: $alt;
+                    padding-bottom: 15px;
+                }
+
+                ol li {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: black;
+                    padding-left: 25px;
+
+                    span {
+                        color: $accent;
+                        font-weight: 700;
+                        padding-right: 10px;
+                    }             
+                }
+            }
+
+            .informacion__list-text p{
+                margin: 0;
+            }
+
+            .informacion__illustration {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                    display: block;
+                    width: 640px;
+                    height: 398px;
+                }
+
+                h3 {
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $text;
+                    width: 620px;
+                }
+            }
+
+            .illustration-text p {
+                margin: 0;
+            }
+
+            .informacion__nextblok {
+
+                h3 {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 22.8px;
+                    color: $main;
+                    padding-bottom: 15px
+                }
+
+                p {
+                    @include text_publications;
+                }
+
+                .nextblok-paragraf {
+                    margin-top: 20px;
+                }
+            }
+
+            .informacion__networks {
+                width: 100%;
+                height: 76px;
+                border-top: 4px solid $separator;
+                display: flex;
+                align-items: end;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 9px;
+                    border-radius: 12px;
+                    background-color: $bg;
+
+                    &:hover {
+                        background-color: $bg_alt;
+                    }
+                }
+            }
+        }
+    }
+
+    .publications__page-recommended {
+        background-color: $bg;
+        a {
+            display: block;
+            text-decoration: none;
+
+            .recommended__link {
+                display: flex;
+                gap: 2px;
+                align-items: center;
+                padding-inline: 60px;
+                padding-top: 30px;
+
+                p {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $regular;
+                    display: block;
+                }
+            }
+        }
+        
+        .recommended__title {
+            padding-inline: 60px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+
+            h3 {
+                @include title_abaut;
+                
+            }
+        }
+
+        .recommended__conteiner {
+            padding-inline: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2px;
+            grid-template-areas:
+                    "publications-conteiner-1 publications-conteiner-2 publications-conteiner-3"
+                    "publications-conteiner-line publications-conteiner-line publications-conteiner-line";
+            gap: 30px; 
+
+            .publications-conteiner{
+                a {
+                    text-decoration: none;
+                }
+                width: 100%;
+                height: 100%;
+                max-width: 600px;
+
+                .publications-conteiner__img {
+    
+                    img {
+                        width: 100%;
+                        height: 200px;
+                    }                  
+                }
+    
+                .publications-conteiner__news {
+                    background-color:#ffff ;
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    height: 100%;
+    
+                    .conteiner__news-title {
+                        font-family: Montserrat;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: $regular;
+
+                        &:hover {
+                            color: $accent;
+                        } 
+                        
+                    }
+
+                    .conteiner__news-data {
+
+                        p {
+                            font-family: Montserrat;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14.6px;
+                            color: $text;
+                            letter-spacing: 1px; 
+                        }
+                    }
+                    .conteiner__news-informacion {
+                        border-top: 4px solid $separator;
+                        padding-top: 15px;
+
+                        p {
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #000; 
+                        }
+                    }         
+                }
+            }
+
+            .publications-conteiner-1 {
+                grid-area: publications-conteiner-1;
+                overflow: hidden;
+
+                a {
+                    height: 100%;
+                }
+
+                .publications-conteiner__img {
+                    background-image: url(../../assets/images/Publication-1.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+
+            .publications-conteiner-2 {
+                grid-area: publications-conteiner-2;
+                overflow: hidden;
+
+                a {
+                    height: 100%;
+                }
+
+                .publications-conteiner__img {
+                    background-image: url(../../assets/images/Publication-2.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+
+            .publications-conteiner-3 {
+                grid-area: publications-conteiner-3;
+                overflow: hidden;
+
+                a {
+                    height: 100%;
+                }
+
+                .publications-conteiner__img {
+                    background-image: url(../../assets/images/Publication-3.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+            
+            .publications-conteiner-line {
+                background-color: $separator;
+                width: 100%;
+                height: 2px;
+                grid-area: publications-conteiner-line;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,98 @@
+@use"fonts" as *;
+@use"variables" as *;
+@use"mixin" as *;
+
+
+.header-dark {
+    background-color: $main;
+
+    .header__logo {
+
+        .header__logo-img svg {
+
+            .special {
+                fill: $white;
+            }
+        }
+
+        .header__logo-text p {
+            color: $white;
+        }
+
+        .header__logo-burger {
+            background-color: $main;
+
+            svg {
+                background-color: $main;
+
+                &:active {
+                    border-radius: 8px;
+                    background-color: $accent;
+                }
+            }
+
+            path {
+                stroke: $white;
+            }      
+        }
+    }
+
+    .header__contakt {
+
+        .header__contakt-language {
+
+            a {
+                color: $white;
+            }
+            
+            .language__hover a{
+
+                &:hover {
+                    background-color: #5b5b83;
+                }
+            }
+        }
+
+        .header__contak-adress p {
+            color: $white;
+  
+        }
+
+        .header__contak-phone p {
+            color: $white;
+        }
+
+        .header__contak-facebook svg {
+
+            path {
+                fill: $white;
+
+                &:hover {
+                    fill: $accent;
+                }
+            }
+        }
+    }
+
+    .header__nav {
+
+        .header__nav-item {
+
+            a {
+                color: $white;
+            }
+    
+        }
+
+        .nav__hover a {
+
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+
+        .nav-aktiv a { 
+            color: $accent;
+        }
+    }
+}

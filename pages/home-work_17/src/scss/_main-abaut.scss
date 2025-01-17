@@ -1,0 +1,220 @@
+@use"fonts" as *;
+@use"variables" as *;
+@use"mixin" as *;
+
+
+.main {
+
+    &__abaut-information {
+        display: flex;
+        gap: 30px;
+        padding-block: 60px;
+        padding-inline: 280px;
+
+        .information-tex {
+             width: 100%;
+
+            h1 {
+                @include title_abaut; 
+            }
+
+            p {
+                @include text_abaut;
+                padding-top: 20px;
+            }
+
+            .top-pading{
+                padding-top: 28px;
+            }
+        }
+
+        .information-show {
+            width: 322px;
+            height: 322px;
+            border-left: 4px solid $separator;
+            padding-left: 34px ;
+            padding-right: 43px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+                    
+            &__item {
+
+                .item__heading {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    &-title {
+                        @include title_abaut;
+                        font-size: 36px;
+                        height: 43.88px;
+                    
+                    }
+                }
+
+                .item-text {
+                    font-family: 'Montserrat';
+                    font-size: 16px;
+                    line-height: 19.5px;
+                    padding-top: 10px;
+                    white-space: nowrap;
+                }               
+            }      
+        }
+    }
+
+    .main__abaut-team {
+
+        .abaut-team__conteiner {
+            position: relative;
+            background-image: url(/assets/images/Team.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:contain;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9; 
+            margin-top: -197px;
+            overflow: hidden;
+            
+            &-title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                padding: 10px 0px;
+                width: 478px;
+            }
+
+            h2 {
+                font-family: montserrat;
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 117.02px;
+                letter-spacing: 63px;
+                opacity: 80%;
+                text-align: center;
+                color: #ffff;
+                text-shadow: 0px 15px 30px #282856CC;
+
+            }
+        }
+    }
+
+    .main__abaut-quality {
+        display: flex;
+        padding-inline: 180px;
+        padding-block: 60px;
+        gap: 60px;
+        margin-top: -197px;
+
+        .quality__info {
+
+            .quality__info-text {
+                @include text_abaut;
+            }
+        }
+
+        .quality__more {
+            height: 138px;
+
+            .quality__more-title{
+                @include title_abaut;
+                width: 362px;
+            }
+        }
+    }
+
+    .main__abaut-achievements {
+        background-color: $bg;
+
+        .achievements__title {
+            text-align: center;
+            padding-block: 30px;
+
+            h3 {
+                font-size: 14px;
+                font-family: montserrat;
+                font-weight: 700;
+                line-height: 17.07px;
+                letter-spacing: 1px;
+                color: $main;
+                text-transform: uppercase;
+            }
+        }
+
+        .achievements__layout {
+            display: flex;
+            gap: 40px;
+            padding-inline: 60px;
+
+            &-img {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                height: 110px;
+                border-radius: 12px;
+                background-color: #ffff;
+                padding-block: 24px;
+
+                img {
+                    height: 60px;
+                    width: auto;
+                    object-fit: cover;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .current__imitation {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                padding-block: 30px;
+            
+                a {
+                    .current__imitation-item {
+                        border-radius: 50%;
+                        width: 16px;
+                        height: 16px;
+                        opacity: 20%;
+                        background-color: $regular;
+                    }
+                    
+                    .current__hover{
+
+                        &:hover {
+                            opacity: 60%;
+                        }
+                    }
+
+                    .active {
+                        opacity: 100%;
+    
+                    }
+                }
+            
+            .no__aktiv {
+                display: none;
+                position: absolute;
+            }
+        }
+
+        .achievements__line {
+            overflow: hidden;
+            margin-inline: 60px;
+            width: auto;
+            height: 2px;
+            background-color: $separator;
+        }
+    }
+}

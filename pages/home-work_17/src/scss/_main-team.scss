@@ -1,0 +1,123 @@
+@use"fonts" as *;
+@use"variables" as *;
+@use"mixin" as *;
+
+
+.main__team {
+    padding-inline: 160px;
+    padding-block: 60px;
+
+    &-conteiner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: 
+        "grid__title grid__title grid__title"
+        "grid__col-1 grid__col-2 grid__col-3"
+        "grid__col-4 grid__col-5 grid__col-6";
+        gap: 60px;
+        overflow: hidden;
+        
+        .main__team-title {
+            margin-inline: 120px;
+            height: auto;
+
+            h1 {
+                @include title_abaut;
+            }
+        }
+
+        .main__team-item {
+            height: auto;
+
+
+            .team-item__foto {
+                padding-bottom: 15px;
+                overflow: hidden;
+
+                img {
+                    border-radius: 12px;
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 3/3;
+                }
+            }
+
+            .team-item__informacion {
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+
+                &-left {
+
+                    .informacion-left__name {
+                        font-family: 'Montserrat';
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        font-weight: 700;
+                        color: $main;
+                    }
+
+                    .informacion-left__position {
+                        font-family: 'Montserrat';
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $text;
+                        padding-top: 5px;
+
+                    }
+                }
+
+                &-ring {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background-color: $bg;
+
+                    &:hover {
+                        background-color: $bg_alt;
+                    }
+
+                    a { 
+                        display: block;
+                        padding-left: 12.5px;
+                        padding-top: 8.5px;
+
+                        &:hover svg path {
+                            stroke: $accent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .grid__col-title {
+            grid-area: grid__title;
+
+        }
+        .grid__col-1 {
+            grid-area: grid__col-1;
+
+        }
+        .grid__col-2 {
+            grid-area: grid__col-2;
+
+        }
+        .grid__col-3 {
+            grid-area: grid__col-3;
+
+        }
+        .grid__col-4 {
+            grid-area: grid__col-4;
+
+        }
+        .grid__col-5 {
+            grid-area: grid__col-5;
+
+        }
+        .grid__col-6 {
+            grid-area: grid__col-6;
+
+        }
+    }
+}
