@@ -254,6 +254,9 @@
         display: flex;
         gap: 30px;
         padding-right: 30px;
+        &:hover {
+            box-shadow: 0 4px 10px #000000, 0 0 5px red;
+        }
 
         .team-conteiner-foto {
             background-image: url(../../assets/images/Team-1.png);
@@ -310,6 +313,12 @@
             display: flex;
             gap: 2px;
             align-items: center;
+            &:hover {
+                p {
+                    color: $accent;
+                }
+
+            }
 
             p {
                 font-family: Montserrat;
@@ -319,6 +328,7 @@
                 color: $regular;
                 display: block;
                 letter-spacing: 1px;
+
             }
         }
     }
@@ -404,6 +414,10 @@
             .publications-conteiner {
                 a {
                     text-decoration: none;
+                }
+                &:hover {
+                    box-shadow: 0 4px 10px #000000, 0 0 5px red;
+
                 }
 
                 width: 100%;

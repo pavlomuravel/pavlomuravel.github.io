@@ -1400,6 +1400,10 @@ table{
       -ms-flex-pack:center;
           justify-content:center;
 }
+.serveces__clients .serveces__clients-conteiner .clients__item:hover{
+  -webkit-box-shadow:5px 5px 11px #000000, 0 0 6px red;
+          box-shadow:5px 5px 11px #000000, 0 0 6px red;
+}
 .serveces__clients .serveces__clients-conteiner .clients__item .clients__item-logo{
   width:auto;
   height:auto;
@@ -1995,6 +1999,10 @@ table{
   gap:30px;
   padding-right:30px;
 }
+.home__team .home__team-conteiner:hover{
+  -webkit-box-shadow:0 4px 10px #000000, 0 0 5px red;
+          box-shadow:0 4px 10px #000000, 0 0 5px red;
+}
 .home__team .home__team-conteiner .team-conteiner-foto{
   background-image:url(../images/Team-1.png);
   background-position:center;
@@ -2050,6 +2058,9 @@ table{
   -webkit-box-align:center;
       -ms-flex-align:center;
           align-items:center;
+}
+.home__team a .recommended__link:hover p{
+  color:#F0145A;
 }
 .home__team a .recommended__link p{
   font-family:Montserrat;
@@ -2139,6 +2150,10 @@ table{
 }
 .home__recommended .publications__page-recommended .recommended__conteiner .publications-conteiner a{
   text-decoration:none;
+}
+.home__recommended .publications__page-recommended .recommended__conteiner .publications-conteiner:hover{
+  -webkit-box-shadow:0 4px 10px #000000, 0 0 5px red;
+          box-shadow:0 4px 10px #000000, 0 0 5px red;
 }
 .home__recommended .publications__page-recommended .recommended__conteiner .publications-conteiner .publications-conteiner__img img{
   width:100%;
