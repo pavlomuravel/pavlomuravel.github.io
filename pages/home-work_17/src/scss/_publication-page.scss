@@ -169,6 +169,15 @@
                 align-items: center;
                 padding-inline: 60px;
                 padding-top: 30px;
+                &:hover {
+
+                    svg path {
+                        stroke: $accent;
+                    }
+                    p {
+                        color: $accent;
+                    }
+                }
 
                 p {
                     font-family: Montserrat;
@@ -203,6 +212,10 @@
             gap: 30px; 
 
             .publications-conteiner{
+                &:hover {
+                    box-shadow: 0 4px 10px #000000, 0 0 5px red;
+
+                }
                 a {
                     text-decoration: none;
                 }

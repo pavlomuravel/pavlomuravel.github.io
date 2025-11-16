@@ -135,6 +135,15 @@
                 display: flex;
                 gap: 2px;
                 align-items: center;
+                &:hover {
+                    p {
+                        color: $accent;
+                    }
+
+                    svg path {
+                        stroke: $accent;
+                    }
+                }
 
                 p {
                     font-family: Montserrat;
@@ -146,6 +155,7 @@
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+
                 }
             }
         }
@@ -318,6 +328,9 @@
                     color: $accent;
                 }
 
+                svg path {
+                    stroke: $accent;
+                }
             }
 
             p {
@@ -379,6 +392,15 @@
                 align-items: center;
                 padding-inline: 160px;
                 padding-top: 30px;
+                &:hover {
+
+                   svg path {
+                        stroke: $accent;
+                   }
+                    p {
+                        color: $accent;
+                    }
+                }
 
                 p {
                     font-family: Montserrat;
